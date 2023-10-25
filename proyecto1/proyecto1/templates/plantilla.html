@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+</head>
+<body>
+    {% include "up/barra.html" %}
+    <h2>
+        Hello world
+    </h2>
+
+    {% if nombre_persona == 'pedro' %}
+        <p>...</p>
+    {% else %}
+        <p>.....</p>
+    {% endif %}
+
+    <p>Mi nombre es {{nombre_persona}} {{apellido_persona}}</p>
+    <p>Hoy es {{actual}}</p>
+
+    {% for i in values %}
+        <p>{{i}}</p>
+    {% endfor %}
+
+</body>
+</html>
